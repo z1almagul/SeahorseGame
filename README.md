@@ -1,1 +1,0 @@
-# z1almagul.github.io
