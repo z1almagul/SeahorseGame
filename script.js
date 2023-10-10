@@ -28,12 +28,12 @@ window.addEventListener('load',function(){
                    this.game.player.shootTop();
             });
             
-            //window.addEventListener('touchmove', e => {
+            window.addEventListener('touchmove', e => {
             //    for(let i = 0; i < e.touches.length; i++){
             //        var touch = e.touches.item[i];
             //        this.game.player.speedY= touch.pageY - this.game.player.height;
             //        }                
-            //});
+            });
         }
     }
     
