@@ -212,7 +212,7 @@ window.addEventListener('load',function(){
                 this.speedY=-this.maxSpeed;
             else if(this.game.keys.includes('ArrowDown'))
                 this.speedY=this.maxSpeed;
-            else this.speedY=0;
+            //else this.speedY=0;
             this.y +=this.speedY;
             //setting vertical boundaries
             if(this.y > this.game.height - this.height * 0.5)
