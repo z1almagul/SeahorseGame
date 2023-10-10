@@ -31,8 +31,13 @@ window.addEventListener('load',function(){
                    this.game.keys.splice(this.game.keys.indexOf(' '),1);
             });
             window.addEventListener('touchmove', e => {
-                
-                    this.game.player.speedY=this.game.player.maxSpeed;
+                touch.pageX - ship.width
+                e.
+                    for(let i = 0; i < e.touches.length; i++){
+                    var touch = e.touches.item[i];
+                    this.game.player.speedY= touch.pageY - this.game.player.height;
+                    }
+                    
                 
             });
         }
