@@ -24,6 +24,15 @@ window.addEventListener('load',function(){
                    this.game.keys.splice(this.game.keys.indexOf(e.key),1);
                }
             });
+            window.addEventListener('touchstart', e =>{
+                   this.game.player.shootTop();
+            });
+            window.addEventListener('touchstart', e =>{
+                   this.game.keys.splice(this.game.keys.indexOf(' '),1);
+            });
+            window.addEventListener('touchmove', e => {
+                
+            });
         }
     }
     
