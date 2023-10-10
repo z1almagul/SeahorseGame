@@ -27,18 +27,12 @@ window.addEventListener('load',function(){
             window.addEventListener('touchstart', e =>{
                    this.game.player.shootTop();
             });
-            window.addEventListener('touchstart', e =>{
-                   this.game.keys.splice(this.game.keys.indexOf(' '),1);
-            });
+            
             window.addEventListener('touchmove', e => {
-                touch.pageX - ship.width
-                e.
-                    for(let i = 0; i < e.touches.length; i++){
+                for(let i = 0; i < e.touches.length; i++){
                     var touch = e.touches.item[i];
                     this.game.player.speedY= touch.pageY - this.game.player.height;
-                    }
-                    
-                
+                    }                
             });
         }
     }
