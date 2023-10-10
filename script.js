@@ -31,10 +31,9 @@ window.addEventListener('load',function(){
                    this.game.keys.splice(this.game.keys.indexOf(' '),1);
             });
             window.addEventListener('touchmove', e => {
-                for(let i = 0; i < e.touches.length; i++){
-                    this.game.player.speedY=e.touches.item(i).clientY;
-                    
-                }
+                
+                    this.game.player.speedY=this.game.player.maxSpeed;
+                
             });
         }
     }
