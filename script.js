@@ -15,8 +15,6 @@ window.addEventListener('load',function(){
                     this.game.keys.push(e.key);
                 }else if(e.key===' '){
                     this.game.player.shootTop();
-                }else if(e.key === 'd'){
-                    this.game.debug = !this.game.debug;
                 }
             });
             window.addEventListener('keyup',e=>{
@@ -210,7 +208,7 @@ window.addEventListener('load',function(){
                 this.speedY=-this.maxSpeed;
             else if(this.game.keys.includes('ArrowDown'))
                 this.speedY=this.maxSpeed;
-            //else this.speedY=0;
+            else this.speedY=0;
             this.y +=this.speedY;
             //setting vertical boundaries
             if(this.y > this.game.height - this.height * 0.5)
